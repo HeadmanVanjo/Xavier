@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>.::JarsBlog|| Admin/Topics::.</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy">
+  <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../../css/style.css"> -->
+  <link rel="stylesheet" href="../../css/admin.css">
+  <link rel="stylesheet" type="text/css" href="../../css/myStyle.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">
+  <!-- <div class="header"> -->
+  <div class="bg-color" ">
+        {{!-- <header id=" main-header ">
+            <nav class=" navbar navbar-default navbar-fixed-top ">
+                <div class=" container ">
+                    <div class=" navbar-header ">
+                        <button type=" button " class=" navbar-toggle " data-toggle=" collapse " data-target="
+    #JarsMenu ">
+                <span class=" icon-bar "></span>
+                <span class=" icon-bar "></span>
+                <span class=" icon-bar "></span>
+              </button>
+                        <a class=" navbar-brand " href=" # ">JarsBlog</a>
+                    </div>
+                    <div class=" collapse navbar-collapse " id=" JarsMenu ">
+                        <ul class=" nav navbar-nav navbar-right navbar-border ">
+                            <li class=" active "><a href="/ ">Home</a></li>
+                            <li class=" dropdown ">
+                              <button class=" btn btn-primary dropdown-toggle " type=" button " data-toggle="
+    dropdown " style=" padding: 14px 16px; ">
+                                <a href=" # ">
+                                  <i class=" fa fa-user "></i><span>  Kwis Lawrence Francis</span>
+                                  <i class=" fa fa-chevron-down " style=" font-size: .8em; "></i>
+                                </a>
+                              </button>
+                              <ul class=" dropdown-menu ">
+                                <li><a href=" # " class=" logout ">Logout</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> --}}
+      <header id=" main-header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#JarsMenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">JarsBlog</a>
+        </div>
+        <div class="collapse navbar-collapse" id="JarsMenu">
+          <ul class="nav navbar-nav navbar-right navbar-border">
+            <li class=" active "><a href="/ ">Home</a></li>
+            <li></li>
+
+            {{!-- <button class=" btn btn-primary dropdown-toggle " type=" button " data-toggle="
+                      dropdown " style=" padding: 14px 16px; ">
+                    <a href=" # ">
+                      <i class=" fa fa-user "></i><span> Kwis Lawrence Francis</span>
+                      <i class=" fa fa-chevron-down " style=" font-size: .8em; "></i>
+                    </a>
+                  </button>
+                  <ul class=" dropdown-menu ">
+                    <li><a href=" # " class=" logout ">Logout</a></li>
+                  </ul> --}}
+            {{!-- <li><a href="/about">About</a></li>
+                  <li><a href="/contact">Contact Us</a></li> --}}
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+  </div>
+  <div class="container">
+    {{#if success_messages}}
+    <div class="alert alert-success">
+      <strong>{{success_messages}}</strong>
+    </div>
+    {{/if}}
+
+    {{#if error_messages}}
+    <div class="alert alert-danger">
+      <strong>{{error_messages}}</strong>
+    </div>
+    {{/if}}
+
+  </div>

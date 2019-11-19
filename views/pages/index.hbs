@@ -1,0 +1,76 @@
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">
+  <div class="header">
+    <div class="bg-color">
+
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 wow fadeIn delay-05s">
+              <div class="banner-text">
+                <h2>Hi, I am <span>Joshua </span> Audu,</h2>
+                <p>Welcome to <br>My Blog.</p>
+              </div>
+              <!-- <div class="overlay-detail text-center">
+                                <a href="about.html"><i class="fa fa-angle-down"></i></a>
+                            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<section id="content">
+  <div class="container clearfix">
+   <div class="container-fluid">
+      <div class="main-content">
+        <h1 class="control-label">Blog Posts</h1>
+        {{!-- Post 1 --}}
+        {{#each posts}}
+        <div class="post clearfix">
+          <img src="{{fileupload}}" alt="HelloWorld">
+          <div class="post-preview">
+            <h1><a href="">{{title}}</a></h1>
+            <h6><a href="#">{{topics}}</a></h6>
+            <i class="fa fa-user"> Admins</i>
+            &nbsp;
+            <i class="fa fa-calendar"> {{date}}</i>
+            <div class="list-inline media-right">
+              <i onclick="like()" class="fa fa-thumbs-up"><p type="text" id="show"></p></i> 
+              &nbsp;
+              <i class="fa fa-comments" onclick="comments">comments</i>
+            </div>
+            <p class="preview-text">
+            {{body}}
+            </p>
+            <a href="#" class="btn btn-info grid-item">Read More</a>
+            <br><br>
+            <div class="container-fluid" style="border: 1px solid #ccc;">
+              {{!-- {{#each comment}} --}}
+              <div class="list-inline">
+                <i class="fa fa-user-circle"><span> Users Name</span></i>
+                &nbsp;
+                <i class="fa fa-calendar"><span> Date</span></i>
+              </div>
+              <p class="preview-text">
+                this is my comment here
+              </p>
+              <a href="#">See More</a>
+            </div>
+            {{!-- {{/each}} --}}
+          </div>
+        </div>
+        <br>
+        <hr>
+
+        {{/each}}
+       
+        
+        
+   </div>
+    </div>
+  </div>
+</section>
+
+

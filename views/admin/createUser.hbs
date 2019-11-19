@@ -1,0 +1,70 @@
+<div class=" container-fluid " style=" margin-top: 20px; ">
+  <div class=" col-sm-3 sidenav navbar-fixed-left " style=" height: 550px; font-size: 16px; ">
+    <ul class=" nav nav-pills nav-stacked ">
+      <li><a href="/admin ">Manage Post</a></li>
+      <li><a href="/admin/users ">Manage Users</a></li>
+      <li><a href="/admin/topics ">Manage topics</a></li>
+    </ul>
+  </div>
+  <div class=" col-sm-9 admin-content ">
+    <div class=" botton-group ">
+      <a href="/admin/createUser " class=" btn btn-primary btn-lg "><i class="fa fa-user-plus "></i>Add Users</a>
+      <a href="/admin/users " class=" btn btn-primary btn-lg "><i class="fa fa-users "></i>Manage Users</a>
+    </div>
+
+    <div class=" content ">
+      <h2 class=" page-title ">Add Users</h2>
+
+      <form action=" create.html " method=" post " role=" form ">
+        <!-- <div class=" form-group ">
+              <label for=" ">Name</label>
+              <input type=" text " name=" name " class=" form-control " id=" text-input " placeholder=" Topic Title " data-rule=" minlen:4 " data-msg=" Please enter at least 4 chars ">
+              <div class=" validation "></div>
+            </div>
+            <div class=" form-group ">
+              <label for=" ">Description</label>
+              <textarea name=" Description " id=" body " class=" form-control " data-rule=" required " data-msg=" Please write something here.. " placeholder=" Description "></textarea>
+              <div class=" validation "></div>
+            </div> -->
+        <div class=" form-group ">
+          <label for=" ">Username</label>
+          <input type=" text " name="Username " class=" form-control " id=" text-input " placeholder="Username "
+            data-rule=" minlen:4 " data-msg=" Please enter at least 4 chars ">
+          <div class="validation "></div>
+        </div>
+        <div class=" form-group ">
+          <label for=" ">Email</label>
+          <input type="email " name="email " class=" form-control " id=" text-input " placeholder="Email.. "
+            data-rule=" minlen:4 " data-msg=" Please enter at least 4 chars ">
+          <div class="validation "></div>
+        </div>
+        <div class=" form-group ">
+          <label for=" ">Password</label>
+          <input type=" text " name="Password " class=" form-control " id=" text-input " placeholder="Password "
+            data-rule=" minlen:4 " data-msg=" Please enter at least 4 chars ">
+          <div class=" validation "></div>
+        </div>
+        <div class=" form-group ">
+          <label for=" ">Password Confirmation</label>
+          <input type=" text " name="Password " class=" form-control " id=" text-input " placeholder="PasswordCon! "
+            data-rule=" minlen:4 " data-msg=" Please enter at least 4 chars ">
+          <div class=" validation "></div>
+        </div>
+
+        <div class=" form-group ">
+          <label for="role ">Role</label>
+          <select name=" role " class=" form-control ">
+            <option value="---- ">Selct Role</option>
+            <option value="Author ">Author</option>
+            <option value="Admin ">Admin</option>
+          </select>
+          <div class=" validation "></div>
+        </div>
+
+        <div class=" text-center "><button type=" submit " class=" btn btn-primary btn-lg ">Add User</button></div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
