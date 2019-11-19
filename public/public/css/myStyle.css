@@ -1,0 +1,65 @@
+/* section {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section #wrapper {
+    width: 1050px;
+} */
+
+.fa-thumbs-up {
+    cursor: pointer;
+}
+
+.fa-thumbs-up:hover {
+    color: blue;
+}
+
+section #wrapper #header {
+    background-color: #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+section #wrapper #header .container .row .col-md-12 h2 .deco {
+    font-family: 'Satisfy', cursive;
+}
+
+section #wrapper #content .post {
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+section #wrapper #content .post h1 {
+    font-size: 18px;
+}
+
+section #wrapper #content .post p {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+section #wrapper #content .post p:last-child {
+    margin-bottom: 0px;
+}
+
+section #wrapper #content .post .ref-locale {
+    border: 1px solid #ccc;
+}
+
+section #wrapper #content .post .ref-locale .avatar {
+    border: 1px solid #ccc;
+}
+
+fa-user {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* .deco {
+    font-family: 'Satisfy', cursive;
+} */

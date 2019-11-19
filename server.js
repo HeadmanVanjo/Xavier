@@ -62,6 +62,7 @@ app.use((req, res, next) => {
     // =============Route grouping =================
 app.use('/', require('./routes/index'))
 app.use('/admin', require('./routes/admin'))
+app.use('/login', require('./routes/login'))
 
 
 
